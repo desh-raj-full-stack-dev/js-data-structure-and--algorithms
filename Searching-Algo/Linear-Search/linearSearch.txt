@@ -1,0 +1,39 @@
+Searching Algorithms in JavaScript ==>
+What is a Search Algorithm?
+
+=> Search algorithms are used to retrieve some information stored in a data structure.
+
+=> For example, we could search an array (the data structure) for the value 8 (some information).
+
+=> Usually, a searching algorithm will return the position of the found value, or if it isn’t found, it will return -1.
+
+=> So, if we searched [1, 2, 3] for the value 2, then we’d get back 1 – the index of the found value.
+
+=> If we searched the same array for 5, we’d get back -1; i.e. value not found.
+Linear Search
+
+=> Linear Search is a very common searching algorithm; It is implemented under the hood in the JavaScript built-in methods ==> 
+        indexOf(), 
+        includes(), 
+        find(), 
+        and findIndex().
+
+=> Linear Search is also very straightforward and easy to implement: simply loop over each element in an array and stop if that element equals our target value, then return that element’s index.
+
+=> The best case time complexity of Linear Search is O(1) – constant time. This occurs if the value we’re searching for is at the beginning of the array. The algorithm will always only have to make one comparison, no matter the size of the array.
+
+=> If our target is the last element in the array, then the algorithm will have to make n comparisons (n being the length of the input array). This means that the Big O notation of Linear Search is Big O(n) – linear time complexity.
+
+=> Linear Search has a space complexity of O(1) – constant space. It uses no auxiliary data structures to find the target value.
+
+=> Linear Search is the best we can do when searching unsorted arrays, such as [4, 2, 3].
+
+=> For sorted arrays, Binary Search is a more efficient option.
+	
+    Time Complexity (Best)	O(1)
+    Time Complexity (Average)	O(n)
+    Time Complexity (Worst)	O(n)
+    Space Complexity	O(1)
+
+=> When to use Linear Search -->
+    Linear search is the best we can do when searching in unsorted arrays, such as [9, 6, 5, 8, 4, 1, 7, 3, 2, 0].
