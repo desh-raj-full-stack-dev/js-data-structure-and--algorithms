@@ -1,0 +1,26 @@
+Binary Search
+
+=> Binary Search can be used to search for values in SORTED arrays only – such as [1, 2, 3, 6, 9]. It is more performant that Linear Search for anything other than small arrays (< 10 elements). It is much more performant than Linear Search when the sorted array is large.
+
+=> Binary Search is a “divide and conquer” type algorithm; it divides the array roughly in half every time it checks whether a value is the one we’re looking for.
+
+=> Here’s how Binary Search works:
+
+    Start in the middle and check if the target is greater or less than that value.
+    If the target is greater, we will next look at the second half of the array (ignore the right)
+    If the target is smaller, we look at the first half of the array (ignore the left).
+    We pick the middle of that half and check if it’s greater or less than our target.
+    Repeat this process until we find our target.
+
+=> The best-case complexity of Binary Search occurs when the value we are searching for is in the middle of the array. Only one comparison will be needed – no matter the size of the array. Therefore, at best, Binary Search runs at constant time – O(1).
+
+=> The worst-case occurs when our target value is at the beginning or end of the array. if we have an array 32 elements long and our target is 32, then the array will be divided five times until we find 32. So, the Big O complexity of binary search is O(log(n)) – logarithmic time complexity: log(32) = 5.
+
+=> Binary Search requires no auxiliary data structures; therefore, the space complexity of Binary Search is O(1) – constant space.
+
+=> When to use Binary Search? Use Binary Search on medium to large sorted arrays.
+	
+    Time Complexity (Best)	O(1)
+    Time Complexity (Average)	O(log(n))
+    Time Complexity (Worst)	O(log(n))
+    Space Complexity	O(1)
